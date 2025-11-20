@@ -1,4 +1,3 @@
-import React from "react";
 import solar from "../assets/solar1.jpg";
 import { motion } from "framer-motion";
 import CounterOnScroll from "./CounterOnScroll";
