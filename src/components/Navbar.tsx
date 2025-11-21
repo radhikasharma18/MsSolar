@@ -14,16 +14,16 @@ const Navbar = () => {
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
             <Zap className="text-amber-600" />
-            <a href="#" className="text-2xl font-bold ">
+            <a href="/" className="text-2xl font-bold ">
               MS Solar
             </a>
           </div>
 
           <div className="flex gap-6 text-lg">
-            <a href="#" className="font-manrope hover:text-amber-600 transition-colors">
+            <a href="/residential" className="font-manrope hover:text-amber-600 transition-colors">
               Residential
             </a>
-            <a href="#" className="hover:text-amber-600 transition-colors">
+            <a href="/commercial" className="hover:text-amber-600 transition-colors">
               Commercial
             </a>
           </div>

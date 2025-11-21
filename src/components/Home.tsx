@@ -8,6 +8,7 @@ import { useState } from "react";
 import forest from '../assets/forest.jpg'
 import Footer from '../components/Footer'
 
+
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {
@@ -74,7 +75,7 @@ const Home = () => {
                       className="button-wrapper"
                     >
                       <a
-                        href="/about-us"
+                        href="/contact"
                         className="group inline-flex items-center gap-3 px-5 py-3 rounded-lg text-white relative overflow-hidden bg-amber-600"
                       >
                         <span className="tracking-wide">Order Installation</span>
@@ -358,6 +359,7 @@ const Home = () => {
 
       </section>
       <Footer/>
+      
     </>
   );
 };

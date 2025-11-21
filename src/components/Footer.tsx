@@ -71,7 +71,7 @@ const Footer = () => {
           ">
             {/* CTA Button */}
             <a
-              href="/about-us"
+              href="/contact"
               className="
                 group inline-flex items-center gap-3 
                 px-6 py-3 rounded-2xl bg-amber-600 text-white 
@@ -89,12 +89,7 @@ const Footer = () => {
                   <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
                 </svg>
 
-                <svg
-                  viewBox="0 0 15 14"
-                  className="absolute inset-0 w-4 h-4 fill-current opacity-0 -translate-x-4 transition-transform duration-300 group-hover:translate-x-0"
-                >
-                  <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
-                </svg>
+               
               </div>
             </a>
 
@@ -117,8 +112,9 @@ const Footer = () => {
           font-extrabold text-amber-600/10 
           select-none leading-none mt-10 md:mt-0
         ">
-          <Zap className="w-[100px] h-[80px] md:w-[250px] md:h-[200px] mr-4" />
-          MS Solar
+          <a href="\contact">   <Zap className="w-[100px] h-20 md:w-[250px] md:h-[200px] mr-4" />
+          MS Solar</a>
+        
         </div>
       </motion.div>
     </section>
