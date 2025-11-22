@@ -1,8 +1,13 @@
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { Zap } from "lucide-react";
+import { useNavigate} from "react-router-dom";
+
+
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <nav className="absolute top-0 z-50 bg-tranparent text-white w-full p-4">
       <motion.div
@@ -14,18 +19,24 @@ const Navbar = () => {
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
             <Zap className="text-amber-600" />
-            <a href="/" className="text-2xl font-bold ">
+            <button
+            onClick={()=>navigate('/')}
+             className="text-2xl font-bold ">
               MS Solar
-            </a>
+            </button>
           </div>
 
           <div className="lg:flex gap-6 text-lg hidden">
-            <a href="/residential" className="font-manrope hover:text-amber-600 transition-colors">
+            <button
+            onClick={()=>navigate('/residential')}
+              className="font-manrope hover:text-amber-600 transition-colors">
               Residential
-            </a>
-            <a href="/commercial" className="hover:text-amber-600 transition-colors">
+            </button>
+            <button 
+            onClick={()=>navigate('/commercial')}
+           className="hover:text-amber-600 transition-colors">
               Commercial
-            </a>
+            </button>
           </div>
         </div>
 

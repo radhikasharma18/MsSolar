@@ -2,8 +2,11 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Zap } from "lucide-react";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
+  const navigate= useNavigate();
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -36,9 +39,11 @@ const Footer = () => {
           <div className="space-y-4 md:space-y-6 w-full md:w-auto">
             <div className="flex items-center gap-2">
               <Zap className="text-amber-600 w-[25px] h-[30px]" />
-              <a href="#" className="text-2xl md:text-3xl font-extrabold text-amber-600">
+              <button
+              onClick={()=>navigate('/')}
+              className="text-2xl md:text-3xl font-extrabold text-amber-600">
                 MS Solar
-              </a>
+              </button>
             </div>
 
             <div className="text-base md:text-lg text-gray-500 hover:text-gray-700 transition">
@@ -70,8 +75,8 @@ const Footer = () => {
             space-y-6 md:space-y-8 w-full md:w-auto
           ">
             {/* CTA Button */}
-            <a
-              href="/contact"
+            <button
+            onClick={()=>navigate('/contact')}
               className="group inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-amber-600 text-white font-semibold shadow-md hover:shadow-lg transition relative overflow-hidden ">
               <span className="tracking-wide">Book a Call</span>
 
@@ -85,7 +90,7 @@ const Footer = () => {
 
                
               </div>
-            </a>
+            </button>
 
             {/* Social icons */}
             <div className="flex text-xl md:text-2xl gap-4">

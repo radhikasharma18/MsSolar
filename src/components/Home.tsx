@@ -7,10 +7,12 @@ import Accordion from "../components/Accordion";
 import { useState } from "react";
 import forest from '../assets/forest.jpg'
 import Footer from '../components/Footer'
-import AboutUs from "./AboutUs";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));
@@ -87,13 +89,13 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 2, ease: "easeOut" }}
             >
-              <a
-                href="/contact"
-                className="
+              <button
+               onClick={() => navigate("/contact")}
+               className="
                   group inline-flex items-center gap-3 
                   p-4 sm:px-5 sm:py-3
                   rounded-lg text-white bg-amber-600 
-                  relative overflow-hidden text-sm sm:text-base
+                  relative overflow-hidden text-sm sm:text-base absolute
                 "
               >
                 <span className="tracking-wide">Order Installation</span>
@@ -115,7 +117,7 @@ const Home = () => {
                     <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
                   </svg>
                 </div>
-              </a>
+              </button>
             </motion.div>
 
           </div>
@@ -189,10 +191,10 @@ const Home = () => {
       </div>
     </div>
 
-    {/* Button */}
+  
     <div>
-      <a
-        href="/aboutus"
+      <button
+        onClick={() => navigate("/aboutus")}
         className="group inline-flex items-center gap-3 px-4 sm:px-5 py-2 sm:py-3 rounded-lg 
         relative overflow-hidden text-amber-600 border-2 border-amber-600 text-sm sm:text-base"
       >
@@ -213,7 +215,7 @@ const Home = () => {
             <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
           </svg>
         </div>
-      </a>
+      </button>
     </div>
   </div>
 </section>
@@ -264,8 +266,8 @@ const Home = () => {
         </div>
 
         <div>
-          <a
-            href="/aboutus"
+          <button
+           onClick={() => navigate("/aboutus")}
             className="group inline-flex items-center gap-3 px-4 sm:px-5 py-2 sm:py-3 
               rounded-lg relative overflow-hidden text-black bg-white text-sm sm:text-base"
           >
@@ -286,7 +288,7 @@ const Home = () => {
                 <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
               </svg>
             </div>
-          </a>
+          </button>
         </div>
       </div>
 
@@ -307,8 +309,8 @@ const Home = () => {
         </div>
 
         <div>
-          <a
-            href="/aboutus"
+          <button
+           onClick={() => navigate("/aboutus")}
             className="group inline-flex items-center gap-3 px-4 sm:px-5 py-2 sm:py-3 
               rounded-lg relative overflow-hidden text-black bg-white text-sm sm:text-base"
           >
@@ -329,7 +331,7 @@ const Home = () => {
                 <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
               </svg>
             </div>
-          </a>
+          </button>
         </div>
       </div>
 
@@ -341,7 +343,7 @@ const Home = () => {
 
       <section className="mx-8 my-32 h-full flex flex-col md:flex-row justify-between gap-10">
   {/* Left Title Section */}
-  <div className="font-serif text-amber-600 text-4xl md:text-5xl w-full md:w-1/2">
+  <div className="font-serif text-amber-600 text-4xl md:text-3xl w-full md:w-1/2">
     ADVANTAGES
   </div>
 
@@ -406,8 +408,8 @@ const Home = () => {
           <div className="absolute flex flex-col justify-end gap-8 items-center h-full text-center ">
              <div className="md:text-5xl text-2xl text-white ">Are you ready not to pay for electricity anymore?</div>
  <div> <div>
-                <a
-                  href="/aboutus"
+                <button
+                onClick={()=>navigate('/aboutus')}
                   className="group inline-flex items-center gap-3 px-5 py-3 rounded-lg relative overflow-hidden text-black bg-white"
                 >
                   <span className="tracking-wide">Yes let's do it</span>
@@ -427,7 +429,7 @@ const Home = () => {
                       <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
                     </svg>
                   </div>
-                </a>
+                </button>
               </div></div>
            <div className="backdrop-blur-2xl bg-white/10 rounded-t-4xl h-1/2 md:w-[400px] w-[300px] text-white p-6 space-y-4">
 
