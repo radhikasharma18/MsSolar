@@ -49,12 +49,7 @@ const Contact = () => {
         </p>
         <div className='w-full flex gap-8 '>
         <div className='w-1/2 rounded-3xl'>
-         
-         
-      
-  
-     
-          <form onSubmit={handleSubmit} className="bg-gray-100 p-8 rounded-3xl shadow-xl h-full  max-w-3xl mx-auto w-full space-y-6">
+          <form onSubmit={handleSubmit} className="bg-gray-100 p-8 rounded-3xl shadow-xl h-full  max-w-3xl mx-auto w-full space-y-6 flex flex-col justify-between">
             {/* Row 1 */}
             <div className="flex gap-4">
               <input
@@ -92,7 +87,7 @@ const Contact = () => {
             </div>
     
             {/* Project Type */}
-            <div className="bg-white p-4 rounded-lg">
+            <div className="bg-white p-4 rounded-lg ">
               <p className="mb-2 font-medium">This project is:</p>
     
               <div className="flex gap-6">

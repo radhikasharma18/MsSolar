@@ -19,7 +19,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className="flex gap-6 text-lg">
+          <div className="lg:flex gap-6 text-lg hidden">
             <a href="/residential" className="font-manrope hover:text-amber-600 transition-colors">
               Residential
             </a>

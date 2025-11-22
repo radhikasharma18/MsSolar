@@ -23,7 +23,7 @@ const Footer = () => {
     >
       <motion.div
         style={{ scaleY, scale, opacity, y }}
-        className="w-full min-h-[70vh] origin-bottom flex flex-col p-6 md:p-12"
+        className="w-full min-h-[70vh] origin-bottom flex flex-col p-2 md:p-12"
       >
         {/* Top Content */}
         <div className="
@@ -72,13 +72,7 @@ const Footer = () => {
             {/* CTA Button */}
             <a
               href="/contact"
-              className="
-                group inline-flex items-center gap-3 
-                px-6 py-3 rounded-2xl bg-amber-600 text-white 
-                font-semibold shadow-md hover:shadow-lg 
-                transition relative overflow-hidden
-              "
-            >
+              className="group inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-amber-600 text-white font-semibold shadow-md hover:shadow-lg transition relative overflow-hidden ">
               <span className="tracking-wide">Book a Call</span>
 
               <div className="relative w-4 h-4">
@@ -105,15 +99,16 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* BIG Background Text */}
+    
         <div className="
-          flex items-center justify-center 
+          flex  items-center justify-center 
           text-[90px] sm:text-[140px] md:text-[200px] 
           font-extrabold text-amber-600/10 
           select-none leading-none mt-10 md:mt-0
         ">
-          <a href="\contact">   <Zap className="w-[100px] h-20 md:w-[250px] md:h-[200px] mr-4" />
-          MS Solar</a>
+            
+          <Zap className="w-[100px] h-20 md:w-[250px] md:h-[200px] mr-4" />
+          MS Solar
         
         </div>
       </motion.div>
