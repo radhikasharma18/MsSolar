@@ -11,6 +11,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Zap } from 'lucide-react';
+import commercial1 from '../assets/commercial1.jpg'
 
 const testimonials = [
   {
@@ -221,19 +222,13 @@ const [index, setIndex] = useState(0);
   </div>
  </section>
   <section className="h-[70vh] md:p-16 p-6 ">
-       <div className="relative bg-center bg-cover h-full inset-0  rounded-2xl  flex items-center justify-center" 
-        style={{ backgroundImage: `url(${forest})` }}>
+       <div className="relative bg-center bg-cover h-full inset-0  rounded-2xl  flex items-center justify-center text-white" 
+        style={{ backgroundImage: `url(${commercial1})` }}>
            <div className="absolute inset-0 bg-black/35 rounded-2xl"></div>
-           <div className="absolute flex flex-col justify-center gap-8 items-center h-full t ">
-             
-                <div className='flex items-center text-white text-lg'>With Love For Nature</div>
-                 <div className="flex items-center gap-2 font-bold text-5xl">
-            <Zap className="text-amber-600 h-[400px] w-[40px]" />
-              MS Solar          
+          <div className='absolute'>
+            <div className='text-center'>love with nature</div>
+            <div className='flex  text-5xl items-center font-bold'><Zap />MS Solar</div>
           </div>
- 
-            
-           </div>
  
 
        </div>
