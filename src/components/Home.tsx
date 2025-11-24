@@ -4,15 +4,22 @@ import CounterOnScroll from "./CounterOnScroll";
 import house from "../assets/house.jpg";
 import commercial from "../assets/commercial.jpg";
 import Accordion from "../components/Accordion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import forest from '../assets/forest.jpg'
 import Footer from '../components/Footer'
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 const Home = () => {
   const navigate = useNavigate();
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const handleToggle = (index: number) => {
     setActiveIndex((prev) => (prev === index ? null : index));

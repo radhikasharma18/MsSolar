@@ -1,12 +1,19 @@
 import React from 'react'
 import contact from '../assets/contact.jpg'
 import Footer from './Footer'
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
+import { useLocation } from 'react-router-dom';
 
 
 const Contact = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   const [formData, setFormData] = useState({
      firstName: "",
      lastName: "",

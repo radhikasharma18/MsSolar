@@ -10,12 +10,12 @@ interface AccordionProps {
 
 const Accordion: React.FC<AccordionProps> = ({ title, children, open, onToggle }) => {
   return (
-    <div className="border-b border-gray-400">
+    <div className="border-b border-gray-200">
       <button
         onClick={onToggle}
-        className="w-full flex justify-between items-center py-4 text-left"
+        className="w-full flex justify-between items-center py-4 "
       >
-        <span className="font-semibold text-lg p-4">{title}</span>
+        <span className="font-semibold text-lg py-4">{title}</span>
 
         <span
           className={
