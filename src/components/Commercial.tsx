@@ -96,8 +96,8 @@ const Commercial = () => {
 
 
 
-                  <section className=' m-16 h-screen flex flex-col gap-32'>
-                    <div className='text-4xl font-semibold '>Our simplified process</div>
+                  <section className=' m-16 h-screen flex flex-col gap-20'>
+                    <div className='text-4xl font-semibold '>Our Simplified Process</div>
                     <div className="flex gap-10">
 
   

@@ -74,18 +74,28 @@ const [index, setIndex] = useState(0);
   <div className="relative z-10 flex flex-col gap-8">
 
     <div className="flex flex-col gap-2">
-      <div className="text-4xl md:text-6xl font-bold">
+      <motion.div 
+       initial={{ opacity: 0, x : 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}className="text-4xl md:text-6xl font-bold">
         Solar for your home
-      </div>
+      </motion.div>
 
-      <div className="w-full md:w-1/2 text-lg md:text-xl">
+      <motion.div
+      initial={{ opacity: 0, x : 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+   className="w-full md:w-1/2 text-lg md:text-xl">
         Say goodbye to traditional electricity bills and
         hello to a brighter and greener lifestyle with our
         solar panel solutions.
-      </div>
+      </motion.div>
     </div>
 
-    <div>
+    <motion.div
+     initial={{ opacity: 0, y : 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}>
       <button
         onClick={() => navigate('/contact')}
         className="group inline-flex items-center gap-3 p-4 rounded-lg text-white bg-amber-600 relative overflow-hidden"
@@ -101,7 +111,7 @@ const [index, setIndex] = useState(0);
           </svg>
         </div>
       </button>
-    </div>
+    </motion.div>
 
   </div>
 </motion.div>
@@ -111,10 +121,17 @@ const [index, setIndex] = useState(0);
 
   
   <div className="mb-10">
-    <div className="text-amber-600 text-2xl">YOUR OWN ENERGY</div>
-    <div className="text-4xl font-semibold">
+    <motion.div 
+    initial={{ opacity: 0, y : 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.2, ease: "easeOut" }}
+    className="text-amber-600 text-2xl">YOUR OWN ENERGY</motion.div>
+    <motion.div 
+    initial={{ opacity: 0, x : 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1.2, ease: "easeOut" }}className="text-4xl font-semibold">
       Get on the path to energy independence
-    </div>
+    </motion.div>
   </div>
 
  
@@ -169,18 +186,33 @@ const [index, setIndex] = useState(0);
 
  <section className='m-16 '>
   <div>
-  <div className='text-amber-600 text-2xl'>TESTIMONIALS</div>
-<div className='text-4xl font-semibold'>Here's what customers say about us</div>
+  <motion.div 
+  initial={{ opacity: 0, y : 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 2, ease: "easeOut" }}
+  className='text-amber-600 text-2xl'>TESTIMONIALS</motion.div>
+<motion.div
+initial={{ opacity: 0, x : 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 2, ease: "easeOut" }} className='text-4xl font-semibold'>Here's what customers say about us</motion.div>
   </div>
-  <div className="bg-amber-600 h-80 rounded-2xl relative overflow-hidden p-6 text-white flex justify-center mt-16 drop-shadow-2xl font-serif">
+  <motion.div 
+      initial={{ opacity: 0 , y:50}}
+      whileInView={{ opacity: 1, y:0 }}
+      transition={{ duration: 3, ease: "easeOut" }} 
+      className="bg-amber-600/80 h-80 rounded-2xl relative overflow-hidden p-6 text-white flex justify-center mt-16 drop-shadow-2xl font-serif">
 
       {/* Testimonial Text */}
-      <div className="h-full flex flex-col transition-all duration-500">
+      <motion.div 
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 3, ease: "easeOut" }} 
+  className="h-full flex flex-col transition-all duration-500">
         <p className="text-2xl sm:text-3xl lg:text-4xl mb-4">
           "{testimonials[index].text}"
         </p>
         <p className="text-lg font-semibold">- {testimonials[index].author}</p>
-      </div>
+      </motion.div>
 
       {/* Buttons */}
       <div className="absolute bottom-4 left-0 right-0 flex justify-end gap-3 px-6">
@@ -198,14 +230,22 @@ const [index, setIndex] = useState(0);
           <IoIosArrowRoundForward />
         </button>
       </div>
-    </div>
+    </motion.div>
 
  </section>
  <section className='m-16 flex flex-col gap-16'>
 
-  <div className='text-4xl font-semibold'>How & why</div>
+  <motion.div
+    initial={{ opacity: 0, y : 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }} 
+  className='text-4xl font-semibold'>How & why</motion.div>
   <div className='flex gap-8'>
-      <div className='bg-gray-200/50 w-1/2  p-8 flex flex-col gap-4 justify-between rounded-3xl group hover:bg-amber-600/70 transition duration-600' >
+      <motion.div 
+        initial={{ opacity: 0, x : -50 }}
+        whileInView={{ opacity: 1, x : 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className='bg-gray-200/50 w-1/2  p-8 flex flex-col gap-4 justify-between rounded-3xl group hover:bg-amber-600/70 transition duration-600' >
       <div>
       <div className='text-3xl text-amber-600 group-hover:text-white'>How we do it!</div>
       <div className='text-3xl group-hover:text-white'>Expertise and Premium Services</div></div>
@@ -226,8 +266,12 @@ const [index, setIndex] = useState(0);
                         
                          
                   </div></button></div>
-    </div>
-    <div className='bg-gray-200/50 w-1/2  p-8 flex flex-col gap-4 justify-between rounded-3xl group hover:bg-amber-600/70 transition duration-600' >
+    </motion.div>
+    <motion.div 
+    initial={{ opacity: 0, x : 50 }}
+        whileInView={{ opacity: 1, x : 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        className='bg-gray-200/50 w-1/2  p-8 flex flex-col gap-4 justify-between rounded-3xl group hover:bg-amber-600/70 transition duration-600' >
       <div>
       <div className='text-3xl text-amber-600 group-hover:text-white'>why choose solarboost?</div>
       <div className='text-3xl group-hover:text-white'>Your full turnkey solar system installer</div></div>
@@ -248,7 +292,7 @@ const [index, setIndex] = useState(0);
                         
                          
                   </div></button></div>
-    </div>
+    </motion.div>
   </div>
  </section>
   <section className="h-[70vh] md:p-16 p-6 ">
