@@ -102,7 +102,7 @@ const Home = () => {
                   group inline-flex items-center gap-3 
                   p-4 sm:px-5 sm:py-3
                   rounded-lg text-white bg-amber-600 
-                  relative overflow-hidden text-sm sm:text-base absolute
+                  relative overflow-hidden text-sm sm:text-base 
                 "
               >
                 <span className="tracking-wide">Order Installation</span>

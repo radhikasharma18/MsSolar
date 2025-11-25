@@ -1,11 +1,12 @@
-import React from 'react'
-import house from '../assets/house.jpg'
+
 import forest from '../assets/forest.jpg'
 import Footer from './Footer'
 import { GiSolarPower } from "react-icons/gi";
 import { RiTeamLine } from "react-icons/ri";
 import { FaHandshake } from "react-icons/fa";
 import { MdHistory } from "react-icons/md";
+import {motion} from 'framer-motion'
+
 
 const aboutPoints = [
   {
@@ -35,7 +36,10 @@ const AboutUs = () => {
     <div className='w-full'>
 
       {/* HERO SECTION */}
-      <div
+      <motion.div
+      initial={{scale: 0.8, y: -20 }}
+        animate={{ scale: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="h-124 rounded-2xl bg-center bg-cover m-4 font-semibold p-8 text-white flex items-end relative"
         style={{ backgroundImage: `url(${forest})` }}
       >
@@ -46,7 +50,7 @@ const AboutUs = () => {
             Powering homes and businesses with clean, efficient, and sustainable solar solutions.
           </div>
         </div>
-      </div>
+      </motion.div>
 
 
       {/* ABOUT SECTION */}

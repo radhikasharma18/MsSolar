@@ -7,6 +7,7 @@ import { Send } from "lucide-react";
 import { useLocation } from 'react-router-dom';
 
 
+
 const Contact = () => {
   const { pathname } = useLocation();
 
@@ -41,10 +42,13 @@ const Contact = () => {
     <div className="w-full">
 
       {/* Top Image */}
-      <div
+      <motion.div
+      initial={{ scale: 0.8, y: 0.8 }}
+        animate={{ scale: 1, y: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="h-80 rounded-2xl bg-center bg-cover m-4 text-5xl font-semibold p-8 text-white flex items-end "
         style={{ backgroundImage: `url(${contact})` }}
-      >Contact us for a quote</div>
+      >Contact us for a quote</motion.div>
 
       {/* Text Below the Image */}
       <section className=" px-12 mt-16 h-full mb-16">

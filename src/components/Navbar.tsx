@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="absolute top-0 z-50 bg-tranparent text-white w-full p-4">
       <motion.div
         initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex justify-between items-center w-full p-4 "
       >
@@ -36,6 +36,16 @@ const Navbar = () => {
             onClick={()=>navigate('/commercial')}
            className="hover:text-amber-600 transition-colors">
               Commercial
+            </button>
+             <button
+            onClick={()=>navigate('/aboutus')}
+              className="font-manrope hover:text-amber-600 transition-colors">
+              About us
+            </button>
+            <button 
+            onClick={()=>navigate('/contact')}
+           className="hover:text-amber-600 transition-colors">
+              Contact
             </button>
           </div>
         </div>
