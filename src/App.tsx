@@ -5,22 +5,31 @@ import Contact from './components/Contact';
 import Residencial from './components/Residencial';
 import AboutUs from './components/AboutUs';
 import Commercial from './components/Commercial';
+import More from './components/More';
+import Layout from './Layout/Layout';
+import MainLayOut from './Layout/MainLayOut';
 
 const App = () => {
   return (
     <div className="overflow-hidden">
+     
     <Navbar/>
      <Routes>
-      <Route path="/" element={<Home />} />
+      <Route element={<Layout/>}>
+            <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path ="/residential" element={<Residencial/>} />
       <Route path ="/aboutus" element={<AboutUs/>}/>
       <Route path= "/commercial" element={<Commercial/>}/>
-      
-    </Routes>
+      </Route>
+      <Route element={<MainLayOut />}>
+    <Route path ="/more" element={<More/>}/>
+    </Route>
+      </Routes>
     
     </div>
   )
 }
 
 export default App
+ 
