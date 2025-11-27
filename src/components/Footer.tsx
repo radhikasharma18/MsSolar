@@ -42,7 +42,7 @@ const Footer = () => {
               <button
               onClick={()=>navigate('/')}
               className="text-2xl md:text-3xl font-extrabold text-amber-600">
-                MS Solar
+                MSFIN Solar
               </button>
             </div>
 
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
 
             <div className="text-center text-base md:text-lg text-gray-500">
-              © MSSolar 2025 — All Rights Reserved
+              © MSFINSolar 2025 — All Rights Reserved
             </div>
           </div>
 

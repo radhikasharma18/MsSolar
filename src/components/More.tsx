@@ -4,13 +4,16 @@ import More1 from '../assets/more.jpg'
 import {motion} from 'framer-motion'
 import { IoAddSharp } from "react-icons/io5";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { Zap } from 'lucide-react';
 
 const More = () => {
     const navigate=useNavigate();
   return (
     <div className='h-screen flex'>
-        <div className='w-2/5  h-full bg-center bg-cover'>
-        <img src={More1} alt=''  className='w-full  h-full transform scale-x-[-1]' /></div>
+        <div className='w-2/5 h-full bg-center bg-cover relative transform scale-x-[-1] '
+        style={{backgroundImage : `url(${More1})`}}>
+        <div className='scale-x-[-1] flex  m-8 text-3xl items-center text-white font-semibold'><Zap className='text-amber-500'/>MSSolar</div></div>
+
         <div className='m-16 text-black w-3/5 flex flex-col  justify-between'>
             <div className='flex justify-between items-start'>
                 <div>
@@ -43,7 +46,7 @@ Washington DC 20011-1097 USA</div></div>
             <div>(000) 010-0101</div></div>
             <div className='w-1/4'>
             <div  className='text-gray-400 font-semibold'>Email:</div>
-            <div>info@solarboost.com</div></div>
+            <div>info@mssolar.com</div></div>
            <div className="flex text-xl md:text-2xl gap-4 className='w-1/4'">
                          <div className="bg-gray-100 size-10 flex justify-center items-center rounded-full hover:bg-amber-100 transition cursor-pointer text-center">
                            <FaInstagram />

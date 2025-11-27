@@ -24,7 +24,7 @@ const Navbar = () => {
               <button
               onClick={()=>navigate('/')}
               className="text-2xl font-bold ">
-                MS Solar
+                MSFIN Solar
               </button>
             </div>
 

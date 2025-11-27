@@ -253,8 +253,7 @@ const Contact = () => {
           <div>
             <div className="text-gray-400 text-xl">Business Hours:</div>
             <div className="text-lg leading-relaxed">
-              Monday - Friday: 8am to 4:30pm <br />
-              Saturday - By Appointment <br />
+              Monday - Saturday: 10:00am to 6:30pm <br />
               Sunday - Closed
             </div>
           </div>

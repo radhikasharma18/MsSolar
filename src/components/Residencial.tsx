@@ -22,11 +22,11 @@ import {motion} from 'framer-motion'
 
 const testimonials = [
   {
-    text: "SolarBoost not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
+    text: "MSFIN not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
     author: "Kelly",
   },
   {
-    text: "SolarBoost delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
+    text: "MSFIN delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
     author: "Alex",
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
     author: "John",
   },
   {
-    text: "Exceptional service and guidance throughout the process. Highly recommend SolarBoost for anyone looking to switch to solar energy.",
+    text: "Exceptional service and guidance throughout the process. Highly recommend MSFIN Solar for anyone looking to switch to solar energy.",
     author: "Sarah",
   },
 ];
@@ -358,7 +358,7 @@ const [index, setIndex] = useState(0);
     >
       <div>
         <div className="text-2xl sm:text-3xl text-amber-600 group-hover:text-white">
-          why choose solarboost?
+          why choose MSFIN?
         </div>
         <div className="text-2xl sm:text-3xl group-hover:text-white">
           Your full turnkey solar system installer
@@ -366,7 +366,7 @@ const [index, setIndex] = useState(0);
       </div>
 
       <div className="text-gray-600 text-base sm:text-xl group-hover:text-gray-100 leading-relaxed">
-        SolarBoost is an all-in-one service provider with everything you need
+        MSFIN is an all-in-one service provider with everything you need
         to power your home with clean solar energy. We oversee your entire
         project and provide a single point of contact throughout. Our in-house
         engineering team designs your system based on your roof and power usage.
@@ -425,7 +425,7 @@ const [index, setIndex] = useState(0);
     transition={{ duration: 1.2, ease: "easeOut" }}
     className="text-3xl sm:text-4xl font-semibold"
   >
-    The SolarBoost advantage
+    The MSFIN Solar advantage
   </motion.div>
 
   {/* Feature Cards */}
