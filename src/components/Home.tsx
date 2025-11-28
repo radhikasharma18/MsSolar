@@ -1,6 +1,5 @@
 import solar from "../assets/solar1.jpg";
 import { motion } from "framer-motion";
-import CounterOnScroll from "./CounterOnScroll";
 import house from "../assets/house.jpg";
 import commercial from "../assets/commercial.jpg";
 import Accordion from "../components/Accordion";
@@ -135,98 +134,7 @@ const Home = () => {
 </section>
 
 
-   <section className="h-auto py-10">
-  <div className="mx-4 sm:mx-8 flex flex-col gap-20 sm:gap-28 lg:gap-32">
-
-    {/* Heading Section */}
-    <div className="w-full lg:w-7/10">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        className="font-serif text-amber-600 text-xl sm:text-2xl md:text-3xl"
-      >
-        ABOUT COMPANY
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, ease: "easeOut" }}
-        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans mt-4 leading-snug"
-      >
-        Our company is dedicated to harnessing the power of the sun to provide
-        sustainable and eco-friendly energy solutions
-      </motion.div>
-    </div>
-
-    {/* Counter Section */}
-    <div
-      className="
-        flex flex-col sm:flex-row justify-between 
-        gap-12 sm:gap-4 text-center sm:text-left font-semibold
-      "
-    >
-      {/* Years of work */}
-      <div>
-        <div className="text-amber-600 text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-          <CounterOnScroll end={40} />
-        </div>
-        <span className="text-gray-300 text-sm sm:text-base md:text-lg">
-          years of work
-        </span>
-      </div>
-
-      {/* Clients */}
-      <div>
-        <div className="text-amber-600 text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-          <CounterOnScroll end={380} />
-        </div>
-        <span className="text-gray-300 text-sm sm:text-base md:text-lg">
-          clients
-        </span>
-      </div>
-
-      {/* Workers */}
-      <div>
-        <div className="text-amber-600 text-6xl sm:text-7xl md:text-8xl lg:text-9xl">
-          <CounterOnScroll end={50} />
-        </div>
-        <span className="text-gray-300 text-sm sm:text-base md:text-lg">
-          workers
-        </span>
-      </div>
-    </div>
-
-  
-    <div>
-      <button
-        onClick={() => navigate("/aboutus")}
-        className="group inline-flex items-center gap-3 px-4 sm:px-5 py-2 sm:py-3 rounded-lg 
-        relative overflow-hidden text-amber-600 border-2 border-amber-600 text-sm sm:text-base"
-      >
-        <span className="tracking-wide">About Us</span>
-
-        <div className="relative w-4 h-4">
-          <svg
-            viewBox="0 0 15 14"
-            className="absolute inset-0 w-4 h-4 fill-current transition-transform duration-300 group-hover:translate-x-2"
-          >
-            <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
-          </svg>
-
-          <svg
-            viewBox="0 0 15 14"
-            className="absolute inset-0 w-4 h-4 fill-current opacity-0 -translate-x-4 transition-transform duration-300 group-hover:translate-x-0"
-          >
-            <path d="M-8.10623e-05 6.12375H10.668L5.7611 1.21689L7.00973 -0.00982666L14.0195 6.99998L7.00973 14.0098L5.7611 12.7831L10.668 7.8762H-8.10623e-05V6.12375Z" />
-          </svg>
-        </div>
-      </button>
-    </div>
-  </div>
-</section>
-
+   
 
      <section className="min-h-screen m-4 sm:m-6 lg:m-8 py-10">
   <div className="max-w-[1400px] mx-auto">
@@ -350,66 +258,93 @@ const Home = () => {
 
       <section className="mx-8 my-32 h-full flex flex-col md:flex-row justify-between gap-10">
   {/* Left Title Section */}
-  <div className="font-serif text-amber-600 text-4xl md:text-3xl w-full md:w-1/2">
+  <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 3, ease: "easeOut" }} 
+  className="font-serif text-amber-600 text-4xl md:text-3xl w-full md:w-1/2 mx-4">
     ADVANTAGES
-  </div>
+  </motion.div>
 
   {/* Right Accordion Section */}
   <div className="w-full md:w-1/2 flex flex-col gap-4">
-
-    <Accordion
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }} 
+> <Accordion
       title="Saves money on electricity bill"
       open={activeIndex === 0}
       onToggle={() => handleToggle(0)}
     >
       Solar energy is a clean and renewable form of energy, unlike fossil fuels that release harmful emissions. Installing solar panels helps save on electricity costs while supporting a cleaner environment.
-    </Accordion>
-
-    <Accordion
+    </Accordion></motion.div>
+   
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }} > <Accordion
       title="Renewable and sustainable energy source"
       open={activeIndex === 1}
       onToggle={() => handleToggle(1)}
     >
       Solar panels convert sunlight into electricity without causing pollution. They are a sustainable solution that reduces reliance on fossil fuels.
-    </Accordion>
-
-    <Accordion
+    </Accordion></motion.div>
+   
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }} >  <Accordion
       title="Long-term investment"
       open={activeIndex === 2}
       onToggle={() => handleToggle(2)}
     >
       Solar panels provide long-term financial benefits by reducing bills and offering potential returns through incentives and savings.
-    </Accordion>
-
-    <Accordion
+    </Accordion></motion.div>
+  
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }} ><Accordion
       title="Positive environmental impact"
       open={activeIndex === 3}
       onToggle={() => handleToggle(3)}
     >
       Solar power decreases carbon emissions and helps combat climate change while preserving natural resources.
-    </Accordion>
-
-    <Accordion
+    </Accordion></motion.div>
+    
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}  >  <Accordion
       title="Low maintenance"
       open={activeIndex === 4}
       onToggle={() => handleToggle(4)}
     >
       Solar systems require minimal maintenance with occasional cleaning and inspection due to having no moving parts.
-    </Accordion>
-
-    <Accordion
+    </Accordion></motion.div>
+  <motion.div 
+    initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }} > <Accordion
       title="Good ROI"
       open={activeIndex === 5}
       onToggle={() => handleToggle(5)}
     >
       Solar panels offer strong ROI through reduced electricity bills, tax incentives, and long-term financial savings.
-    </Accordion>
+    </Accordion></motion.div>
+
+   
 
   </div>
 </section>
 
       <section className="h-[90vh] m-4 md:p-20 p-6 ">
-      <div className="relative bg-center bg-cover h-full inset-0  rounded-2xl  flex items-end justify-center" 
+      <motion.div 
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 3, ease: "easeOut" }}
+      className="relative bg-center bg-cover h-full inset-0  rounded-2xl  flex items-end justify-center" 
        style={{ backgroundImage: `url(${forest})` }}>
           <div className="absolute inset-0 bg-black/35 rounded-2xl"></div>
           <div className="absolute flex flex-col justify-end gap-8 items-center h-full text-center ">
@@ -465,7 +400,7 @@ const Home = () => {
           </div>
 
  <div></div>
-      </div>
+      </motion.div>
 
       </section>
       <Footer/>
