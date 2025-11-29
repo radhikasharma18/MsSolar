@@ -12,9 +12,9 @@ const More = () => {
     <div className='h-screen flex'>
         <div className='w-2/5 h-full bg-center bg-cover relative transform scale-x-[-1] '
         style={{backgroundImage : `url(${More1})`}}>
-        <div className='scale-x-[-1] flex  m-8 text-3xl items-center text-white font-semibold'><Zap className='text-amber-500'/>MSSolar</div></div>
+        <div className='scale-x-[-1] flex  m-8 text-3xl items-center text-white  font-bold'><Zap className='text-amber-500'/>MSSolar</div></div>
 
-        <div className='m-16 text-black w-3/5 flex flex-col  justify-between'>
+        <div className='m-8 text-black w-3/5 flex flex-col  justify-between'>
             <div className='flex justify-between items-start'>
                 <div>
             <motion.div 
@@ -27,8 +27,9 @@ const More = () => {
                 </div>
             </motion.div>
             <div>We are online right now</div></div>
-            <div className='bg-gray-900 size-10 rounded-full text-white rotate-45 text-center flex justify-center items-center cursor-pointer' ><button 
-            onClick={()=>navigate('/')}className='text-2xl'><IoAddSharp/></button></div></div>
+            <button  onClick={()=>navigate('/')} 
+            className='bg-gray-900 size-10 rounded-full text-white rotate-45 text-center flex justify-center items-center cursor-pointer text-2xl'  ><IoAddSharp/>
+            </button></div>
             <div className='text-4xl font-semibold flex flex-col items-start gap-4'>
             <button onClick={()=>navigate('/')} className='cursor-pointer'>Home</button>
             <button onClick={()=>navigate('/about')}  className='cursor-pointer'>About Us</button>
