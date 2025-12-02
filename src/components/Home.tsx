@@ -1,10 +1,10 @@
-import solar from "../assets/solar1.jpg";
+import solar from "../assets/solar.png";
 import { motion } from "framer-motion";
 import house from "../assets/house.jpg";
 import commercial from "../assets/commercial.jpg";
 import Accordion from "../components/Accordion";
 import { useEffect, useState } from "react";
-import forest from '../assets/forest.jpg'
+import forest from '../assets/forest1.png'
 import Footer from '../components/Footer'
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -62,7 +62,7 @@ const Home = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             className="
-              backdrop-blur-2xl bg-white/35 p-2 rounded-t-xl rounded-br-xl text-sm 
+              backdrop-blur-2xl bg-white/10 p-2 rounded-t-xl rounded-br-xl text-sm 
               sm:text-xs md:text-lg
               w-full sm:w-4/5 md:w-2/5
             "

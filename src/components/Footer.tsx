@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
 
             <div className="text-base md:text-lg text-gray-500 hover:text-gray-700 transition">
-              Privacy Policy
+              CIN no. U35105RJ2025PTC106797
             </div>
           </div>
 
@@ -58,10 +58,10 @@ const Footer = () => {
               text-lg md:text-xl gap-4 md:gap-6 
               font-semibold text-gray-700
             ">
-              <a className="hover:text-amber-600 transition">Residential</a>
-              <a className="hover:text-amber-600 transition">Commercial</a>
-              <a className="hover:text-amber-600 transition">About Us</a>
-              <a className="hover:text-amber-600 transition">Contact Us</a>
+              <button onClick={()=>('/residential')} className="hover:text-amber-600 transition">Residential</button>
+              <button onClick={()=>('/commercial')} className="hover:text-amber-600 transition">Commercial</button>
+              <button onClick={()=>('/aboutus')} className="hover:text-amber-600 transition">About Us</button>
+              <button onClick={()=>('/contact')} className="hover:text-amber-600 transition">Contact Us</button>
             </div>
 
             <div className="text-center text-base md:text-lg text-gray-500">

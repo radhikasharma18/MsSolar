@@ -23,19 +23,19 @@ import {motion} from 'framer-motion'
 const testimonials = [
   {
     text: "MSFIN not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
-    author: "Kelly",
+    author: "Radhe Shyam",
   },
   {
     text: "MSFIN delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
-    author: "Alex",
+    author: "Anjali Kumari",
   },
   {
     text: "Great support and a reliable installation team. The solar system works flawlessly and reduced our monthly expenses significantly.",
-    author: "John",
+    author: "Vikram",
   },
   {
     text: "Exceptional service and guidance throughout the process. Highly recommend MSFIN Solar for anyone looking to switch to solar energy.",
-    author: "Sarah",
+    author: "Sita Devi",
   },
 ];
 

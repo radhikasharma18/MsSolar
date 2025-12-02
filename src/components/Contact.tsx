@@ -22,8 +22,7 @@ const Contact = () => {
      email: "",
      phone: "",
      projectType: "",
-     details: "",
-   });
+     details: "",});
    const handleChange = (
       e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
@@ -78,8 +77,8 @@ const Contact = () => {
 
   {/* Heading */}
   <motion.h2 
-    initial={{ opacity: 0, x: -40 }}
-    whileInView={{ opacity: 1, x: 0 }}
+    initial={{ scale: 0.8 }}
+    whileInView={{ scale: 1 }}
     transition={{ duration: 0.8 }}
     className="text-xl md:text-2xl text-amber-600"
   >
@@ -182,13 +181,10 @@ const Contact = () => {
                        shadow-md hover:bg-amber-600/90 hover:scale-105 
                        flex items-center gap-2 duration-300"
           >
-            <Send size={18} /> Save
-          </button>
-        </div>
-      </form>
+            <Send size={18} /> Save </button></div> </form>
     </motion.div>
 
-    {/* RIGHT CONTACT DETAILS */}
+   
     <motion.div
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -197,7 +193,7 @@ const Contact = () => {
     >
       <div className="p-8 flex flex-col gap-10">
 
-        {/* Location */}
+      
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -209,7 +205,7 @@ const Contact = () => {
             <div className="text-gray-400 text-xl">Jaipur Office:</div>
             <div className="text-lg">
               F-109-112, 1st Floor, Time Square, Central Spine,<br />
-              Vidhyadhar Nagar, Jaipur, Rajasthan, India 302039
+              Vidhyadhar Nagar, Jaipur, Rajasthan, India 302016
             </div>
           </div>
         </motion.div>

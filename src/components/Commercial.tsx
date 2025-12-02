@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import { Zap } from 'lucide-react';
 import { Leaf } from 'lucide-react';
 import { BatteryFull } from 'lucide-react';
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { useState } from 'react';
@@ -21,11 +20,11 @@ import {motion} from 'framer-motion'
 
 const testimonials = [
   {
-    text: "SolarBoost not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
+    text: "MSFIN Solar not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
     author: "Kelly",
   },
   {
-    text: "SolarBoost delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
+    text: "MSFIN Solar delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
     author: "Alex",
   },
   {
@@ -33,7 +32,7 @@ const testimonials = [
     author: "John",
   },
   {
-    text: "Exceptional service and guidance throughout the process. Highly recommend SolarBoost for anyone looking to switch to solar energy.",
+    text: "Exceptional service and guidance throughout the process. Highly recommend MSFIN Solar for anyone looking to switch to solar energy.",
     author: "Sarah",
   },
 ];
@@ -81,7 +80,11 @@ const Commercial = () => {
     {/* Heading & Text */}
     <div className="flex flex-col gap-2">
 
-      <div className="
+      <motion.div 
+       initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="
         text-3xl 
         sm:text-4xl 
         md:text-6xl 
@@ -90,7 +93,7 @@ const Commercial = () => {
         w-full md:w-2/3
       ">
         Solar for your commercial or industrial projects
-      </div>
+      </motion.div>
 
       <div className="
         text-base 
@@ -318,7 +321,7 @@ const Commercial = () => {
    <section className='m-6 md:m-16 flex flex-col gap-12 md:gap-16'>
 
   <div className='text-3xl md:text-4xl font-semibold text-center md:text-left'>
-    The SolarBoost advantage
+    The MSFIN advantage
   </div>
 
   <div className='flex flex-col md:flex-row justify-around gap-6 md:gap-8'>
