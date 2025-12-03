@@ -43,7 +43,7 @@ const More = () => {
 
           <button
             onClick={() => navigate('/')}
-            className='bg-gray-900 size-9 md:size-10 rounded-full text-white rotate-45 flex justify-center items-center cursor-pointer text-xl md:text-2xl'
+            className='bg-gray-900 size-9 md:size-10 rounded-full text-white rotate-45 flex justify-center items-center cursor-pointer text-xl md:text-2xl z-60'
           >
             <IoAddSharp />
           </button>

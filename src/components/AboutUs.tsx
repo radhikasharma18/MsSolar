@@ -6,6 +6,15 @@ import { RiTeamLine } from "react-icons/ri";
 import { FaHandshake } from "react-icons/fa";
 import { MdHistory } from "react-icons/md";
 import {motion} from 'framer-motion'
+import about1 from '../assets/about3.jpeg'
+import about from '../assets/about1.jpeg'
+import about2 from '../assets/about2 (2).jpeg'
+import about3 from '../assets/about4.jpeg'
+import about4 from '../assets/about5.jpeg'
+import about5 from '../assets/about6.jpeg'
+import about6 from '../assets/about7.jpeg'
+import about7 from '../assets/about2.jpeg'
+import panel from '../assets/panel.png'
 
 
 const aboutPoints = [
@@ -76,7 +85,7 @@ const AboutUs = () => {
       {/* IMAGE + CONTENT SECTION */}
       <section className='m-16 flex flex-col lg:flex-row gap-12 items-center'>
         <img
-          src={forest}
+          src={panel}
           className='h-[430px] w-[450px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500'
         />
 
@@ -91,6 +100,51 @@ const AboutUs = () => {
             With each installation, we aim to create a positive impact on both the environment and our customers' lives by reducing electricity bills and promoting energy freedom.
           </div>
         </div>
+      </section>
+      <section className='h-screen m-16'>
+        <div className='text-4xl font-bold text-center mb-16 font-serif'>
+          Inaugration
+      
+        </div>
+    <div className="flex gap-4">
+  
+  
+  <div className="flex-1 grid grid-rows-2 gap-4">
+ 
+    <div className="grid grid-cols-2 gap-4">
+      <img src={about1} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+      <img src={about2} className="w-full h-full object-cover rounded-2xl  hover:scale-90 transition duration-300" />
+    </div>
+ 
+    <div className="grid grid-cols-2 gap-4">
+      <img src={about3} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+      <img src={about4} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+    </div>
+  </div>
+
+
+  <div className="w-1/3 flex justify-center items-center">
+    <img src={about} className="w-full h-1/2 object-cover rounded-2xl hover:scale-90 transition duration-300" />
+  </div>
+
+ 
+  <div className="flex-1 grid grid-rows-2 gap-4">
+ 
+    <div className="grid grid-cols-2 gap-4">
+      <img src={about5} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+      <img src={about6} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+    </div>
+   
+    <div className="grid gap-4">
+    <img src={about7} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+    </div>
+  </div>
+
+</div>
+
+
+
+
       </section>
 
       <Footer />

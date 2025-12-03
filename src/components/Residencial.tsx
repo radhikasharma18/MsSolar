@@ -71,16 +71,13 @@ const [index, setIndex] = useState(0);
   style={{ backgroundImage: `url(${house})` }}
 >
 
-  {/* Dark Overlay */}
   <div className="absolute inset-0 bg-black/40 rounded-2xl"></div>
 
-  {/* Content */}
+
   <div className="relative z-10 flex flex-col gap-4 sm:gap-6 md:gap-8 w-full">
 
-    {/* Text Section */}
     <div className="flex flex-col gap-2 w-full">
 
-      {/* Title */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -90,7 +87,7 @@ const [index, setIndex] = useState(0);
         Solar for your home
       </motion.div>
 
-      {/* Description */}
+    
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -100,7 +97,7 @@ const [index, setIndex] = useState(0);
         Say goodbye to traditional electricity bills and hello to a brighter and greener lifestyle with our solar panel solutions. </motion.div>
     </div>
 
-    {/* Button */}
+  
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
