@@ -1,4 +1,3 @@
-
 import forest from '../assets/forest.jpg'
 import Footer from './Footer'
 import { GiSolarPower } from "react-icons/gi";
@@ -53,99 +52,157 @@ const AboutUs = () => {
         style={{ backgroundImage: `url(${forest})` }}
       >
         <div className="absolute inset-0 bg-black/40 rounded-2xl h-124 "></div>
-        <div className='relative z-10 flex flex-col gap-4'>
+        <motion.div 
+         initial={{opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 2, ease: "easeOut" }}className='relative z-10 flex flex-col gap-4'>
           <div className='text-6xl font-bold tracking-wide'>About Us</div>
           <div className='w-full lg:w-1/2 text-xl opacity-90'>
             Powering homes and businesses with clean, efficient, and sustainable solar solutions.
           </div>
-        </div>
+        </motion.div>
       </motion.div>
 
 
       {/* ABOUT SECTION */}
-      <section className='m-16'>
-        <div className='text-amber-600 text-2xl font-semibold'>WHO WE ARE</div>
-        <div className='text-4xl font-bold mb-10'>Powering a Cleaner Tomorrow</div>
+    <section className="m-6 md:m-16">
+  {/* Heading */}
+  <motion.div 
+   initial={{opacity: 0.8, y: 50 }}
+   animate={{ opacity: 1, y: 0 }}
+   transition={{ duration: 2, ease: "easeOut" }}
+  className="text-amber-600 text-xl md:text-2xl font-semibold">
+    WHO WE ARE
+  </motion.div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
-          {aboutPoints.map((p, i) => (
-            <div
-              key={i}
-              className='p-6 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition duration-300 bg-white'
-            >
-              <div>{p.icon}</div>
-              <div className='text-2xl font-semibold mt-3'>{p.title}</div>
-              <div className='text-gray-600 mt-2'>{p.desc}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+  <motion.div 
+   initial={{opacity: 0.8, x: 50 }}
+   animate={{ opacity: 1, x: 0 }}
+   transition={{ duration: 2, ease: "easeOut" }}
+   className="text-3xl md:text-4xl font-bold mb-8 md:mb-10">
+    Powering a Cleaner Tomorrow
+  </motion.div>
+
+  {/* Cards Grid */}
+  <motion.div 
+  initial={{opacity: 0.8, y: 50 }}
+   animate={{ opacity: 1, y: 0 }}
+   transition={{ duration: 2, ease: "easeOut" }}
+  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+    {aboutPoints.map((p, i) => (
+      <div
+        key={i}
+        className="p-6 rounded-2xl shadow-lg border border-gray-200 
+                   hover:shadow-2xl hover:-translate-y-1 transition duration-300 bg-white"
+      >
+        <div className="text-4xl">{p.icon}</div>
+        <div className="text-xl md:text-2xl font-semibold mt-3">{p.title}</div>
+        <div className="text-gray-600 mt-2 text-sm md:text-base">{p.desc}</div>
+      </div>
+    ))}
+  </motion.div>
+</section>
+
 
 
       {/* IMAGE + CONTENT SECTION */}
-      <section className='m-16 flex flex-col lg:flex-row gap-12 items-center'>
-        <img
-          src={panel}
-          className='h-[430px] w-[450px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500'
-        />
-
-        <div className='flex flex-col gap-6 w-full lg:w-1/2'>
-          <div className='text-amber-600 text-2xl font-semibold'>OUR STORY</div>
-          <div className='text-4xl font-bold'>Why We Started</div>
-          <div className='text-gray-700 text-lg leading-relaxed'>
-            We started with a clear purpose—to reduce electricity dependency and make solar energy accessible for everyone. Our focus is on delivering reliable systems, transparent service, and long-term performance. We believe solar energy is not just a technology, but a movement toward a cleaner and more independent tomorrow.
-          </div>
-
-          <div className='text-gray-700 text-lg leading-relaxed'>
-            With each installation, we aim to create a positive impact on both the environment and our customers' lives by reducing electricity bills and promoting energy freedom.
-          </div>
-        </div>
-      </section>
-      <section className='h-screen m-16'>
-        <div className='text-4xl font-bold text-center mb-16 font-serif'>
-          Inaugration
-      
-        </div>
-    <div className="flex gap-4">
+    <section className="m-6 md:m-16 flex flex-col lg:flex-row gap-10 lg:gap-12 items-center">
   
+  {/* Image */}
+  <motion.img
+   initial={{opacity: 0.4 }}
+   whileInView={{ opacity: 1 }}
+   transition={{ duration: 4, ease: "easeInOut" }}
   
-  <div className="flex-1 grid grid-rows-2 gap-4">
- 
-    <div className="grid grid-cols-2 gap-4">
+    src={panel}
+    className="w-full max-w-sm md:max-w-md lg:h-[430px] lg:w-[450px] rounded-2xl shadow-2xl object-cover hover:scale-105 transition duration-500"
+  />
+
+  {/* Text Section */}
+  <div className="flex flex-col gap-4 md:gap-6 w-full lg:w-1/2 text-center lg:text-left">
+
+    <motion.div 
+   initial={{opacity: 0.8, y: 50 }}
+   whileInView={{ opacity: 1, y: 0 }}
+   transition={{ duration: 2, ease: "easeOut" }}
+   className="text-amber-600 text-xl md:text-2xl font-semibold">
+      OUR STORY
+    </motion.div>
+
+    <motion.div 
+     initial={{opacity: 0.8, x: 50 }}
+   whileInView={{ opacity: 1, x: 0 }}
+   transition={{ duration: 1.8, ease: "easeOut" }}
+    className="text-3xl md:text-4xl font-bold">
+      Why We Started
+    </motion.div>
+
+    <motion.div 
+     initial={{opacity: 0.8, x: 50 }}
+     whileInView={{ opacity: 1, x: 0 }}
+     transition={{ duration: 2.2, ease: "easeOut" }}className="text-gray-700 text-base md:text-lg leading-relaxed">
+      We started with a clear purpose—to reduce electricity dependency
+      and make solar energy accessible for everyone. Our focus is on
+      delivering reliable systems, transparent service, and long-term
+      performance. We believe solar energy is not just a technology,
+      but a movement toward a cleaner and more independent tomorrow.
+    </motion.div>
+
+    <motion.div
+     initial={{opacity: 0.8, x: 50 }}
+   whileInView={{ opacity: 1, x: 0 }}
+   transition={{ duration: 2.4, ease: "easeOut" }}
+    className="text-gray-700 text-base md:text-lg leading-relaxed">
+      With each installation, we aim to create a positive impact on
+      both the environment and our customers' lives by reducing
+      electricity bills and promoting energy freedom.
+    </motion.div>
+
+  </div>
+</section>
+
+    <section className="min-h-screen m-4 md:m-16">
+  <div className="text-3xl md:text-4xl font-bold text-center mb-10 md:mb-16 font-sans text-amber-600">
+    Inaugration
+  </div>
+
+  <div className="flex flex-col lg:flex-row gap-4">
+    
+    {/* Left Grid */}
+    <motion.div 
+     initial={{opacity: 0.8, x: -20,  scale: 0.9}}
+     whileInView={{ opacity: 1, x: 0, scale: 1 }}
+     transition={{ duration: 2, ease: "easeOut" }}
+   className="flex-1 grid grid-cols-2 gap-4">
       <img src={about1} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
-      <img src={about2} className="w-full h-full object-cover rounded-2xl  hover:scale-90 transition duration-300" />
-    </div>
- 
-    <div className="grid grid-cols-2 gap-4">
-      <img src={about3} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+      <img src={about2} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+      <img src={about7} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
       <img src={about4} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
-    </div>
-  </div>
+    </motion.div>
 
+    {/* Center Image */}
+    <motion.div 
+     initial={{opacity: 0.8,   scale: 0.9}}
+     whileInView={{ opacity: 1,  scale: 1 }}
+     transition={{ duration: 2, ease: "easeOut" }}
+    className="w-full lg:w-1/3 flex justify-center items-center">
+      <img src={about} className="w-full h-64 lg:h-1/2 object-cover rounded-2xl hover:scale-90 transition duration-300" />
+    </motion.div>
 
-  <div className="w-1/3 flex justify-center items-center">
-    <img src={about} className="w-full h-1/2 object-cover rounded-2xl hover:scale-90 transition duration-300" />
-  </div>
-
- 
-  <div className="flex-1 grid grid-rows-2 gap-4">
- 
-    <div className="grid grid-cols-2 gap-4">
+    {/* Right Grid */}
+    <motion.div
+     initial={{opacity: 0.8, x: 20,  scale: 0.9}}
+     whileInView={{ opacity: 1, x: 0, scale: 1 }}
+     transition={{ duration: 2, ease: "easeOut" }}
+     className="flex-1 grid grid-cols-2 gap-4">
       <img src={about5} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
       <img src={about6} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
-    </div>
-   
-    <div className="grid gap-4">
-    <img src={about7} className="w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
-    </div>
+      <img src={about3} className="col-span-2 w-full h-full object-cover rounded-2xl hover:scale-90 transition duration-300" />
+    </motion.div>
+
   </div>
+</section>
 
-</div>
-
-
-
-
-      </section>
 
       <Footer />
     </div>

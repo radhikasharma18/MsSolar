@@ -95,11 +95,15 @@ const Footer = () => {
             {/* Social icons */}
             <div className="flex text-xl md:text-2xl gap-4">
               <div className="bg-gray-100 p-3 rounded-full hover:bg-amber-100 transition cursor-pointer">
+                <a href="https://www.instagram.com/msfinsolar/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
+                </a>
               </div>
               <div className="bg-gray-100 p-3 rounded-full hover:bg-amber-100 transition cursor-pointer">
-                <FaLinkedinIn />
-              </div>
+                 <a href=" https://www.linkedin.com/company/msfin-credit-pvt-ltd/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn />
+                </a>
+                </div>
             </div>
           </div>
         </div>

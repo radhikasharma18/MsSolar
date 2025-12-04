@@ -60,18 +60,19 @@ const More = () => {
         </div>
 
         {/* Office details + Social */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
+        <div className=' flex justify-between p-8'>
 
           <div>
             <div className='text-gray-400 font-semibold'>Office</div>
-            <div>F-109-112, 1st Floor, Time Square, Central Spine,<br />
-Vidhyadhar Nagar, Jaipur, Rajasthan, India 302016</div>
+            <div>F-109-112, 1st Floor, Time Square, <br/>
+                 Central Spine,Vidhyadhar Nagar, <br/>
+                 Jaipur, Rajasthan, India 302016</div>
 
           </div>
 
           <div>
             <div className='text-gray-400 font-semibold'>Toll Free:</div>
-            <div>(000) 010-0101</div>
+            <div>8619818765</div>
           </div>
 
           <div>
@@ -81,10 +82,15 @@ Vidhyadhar Nagar, Jaipur, Rajasthan, India 302016</div>
 
           <div className='flex text-xl gap-4'>
             <div className='bg-gray-100 size-10 flex justify-center items-center rounded-full hover:bg-amber-100 transition cursor-pointer'>
-              <FaInstagram />
+             <a href="https://www.instagram.com/msfinsolar/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+                </a>
             </div>
+             
             <div className='bg-gray-100 size-10 flex justify-center items-center rounded-full hover:bg-amber-100 transition cursor-pointer'>
+               <a href=" https://www.linkedin.com/company/msfin-credit-pvt-ltd/" target="_blank" rel="noopener noreferrer">
               <FaLinkedinIn />
+                </a>
             </div>
           </div>
 

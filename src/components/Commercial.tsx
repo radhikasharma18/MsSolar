@@ -21,19 +21,19 @@ import {motion} from 'framer-motion'
 const testimonials = [
   {
     text: "MSFIN Solar not only provided a top-notch solar system but also guided us on financial incentives. Proudly contributing to a greener planet with a hassle-free experience.",
-    author: "Kelly",
+    author: "Radhey Shyam",
   },
   {
     text: "MSFIN Solar delivered beyond expectations, slashing our energy bills. Our home is now part of a sustainable future. Amazing smooth experience!",
-    author: "Alex",
+    author: "Anjali Devi",
   },
   {
     text: "Great support and a reliable installation team. The solar system works flawlessly and reduced our monthly expenses significantly.",
-    author: "John",
+    author: "Vikram",
   },
   {
     text: "Exceptional service and guidance throughout the process. Highly recommend MSFIN Solar for anyone looking to switch to solar energy.",
-    author: "Sarah",
+    author: "Suman Gupta",
   },
 ];
 
@@ -177,32 +177,32 @@ const Commercial = () => {
   >
     {/* Card 1 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title="Utility Bills" icon="01" description="" />
+      <Residentialprops title="Survey" icon="01" description="" />
     </div>
 
     {/* Card 2 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title="Good ROI" icon="02" description="" />
+      <Residentialprops title="Design" icon="02" description="" />
     </div>
 
     {/* Card 3 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title="Reliability" icon="03" description="" />
+      <Residentialprops title="Mounting" icon="03" description="" />
     </div>
 
     {/* Card 4 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title='"Green" Champion' icon="04" description="" />
+      <Residentialprops title='Wiring' icon="04" description="" />
     </div>
 
     {/* Card 5 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title='"Green" Champion' icon="05" description="" />
+      <Residentialprops title='Connection' icon="05" description="" />
     </div>
 
     {/* Card 6 */}
     <div className="bg-[#f2f2f2] rounded-3xl p-4">
-      <Residentialprops title='"Green" Champion' icon="06" description="" />
+      <Residentialprops title='Testing' icon="06" description="" />
     </div>
   </motion.div>
 
