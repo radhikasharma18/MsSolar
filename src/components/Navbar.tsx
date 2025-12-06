@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={() => navigate("/residential")}
             className={`font-manrope transition-colors ${
               isActive("/residential")
-                ? "text-amber-600"
+                ? "text-white underline decoration-amber-600 font-bold text-2xl "
                 : "hover:text-amber-600"
             }`}
           >
@@ -51,7 +51,7 @@ const Navbar = () => {
             onClick={() => navigate("/commercial")}
             className={`font-manrope transition-colors ${
               isActive("/commercial")
-                ? "text-amber-600"
+                ? "text-white underline decoration-amber-600 font-bold text-2xl"
                 : "hover:text-amber-600"
             }`}
           >
@@ -63,7 +63,7 @@ const Navbar = () => {
             onClick={() => navigate("/aboutus")}
             className={`font-manrope transition-colors ${
               isActive("/aboutus")
-                ? "text-amber-600"
+                ? "text-white underline decoration-amber-600 font-bold text-2xl"
                 : "hover:text-amber-600"
             }`}
           >
@@ -75,8 +75,8 @@ const Navbar = () => {
             onClick={() => navigate("/contact")}
             className={`font-manrope transition-colors ${
               isActive("/contact")
-                ? "text-amber-600"
-                : "hover:text-amber-600"
+                ? "text-white underline decoration-amber-600 font-bold text-2xl"
+                : "hover:text-amber-600 "
             }`}
           >
             Contact
@@ -89,7 +89,7 @@ const Navbar = () => {
     {loc.pathname !== "/more" && (
       <button
         onClick={() => navigate("/more")}
-        className="text-3xl bg-gray-300 hover:bg-gray-400 rounded-full p-2 cursor-pointer transition-colors"
+        className="text-3xl bg-gray-400 hover:bg-gray-300 rounded-full p-2 cursor-pointer transition-colors"
       >
         <IoReorderThreeOutline />
       </button>
