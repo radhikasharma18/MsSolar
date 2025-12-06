@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import contact from "../assets/contact.jpg";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
@@ -21,19 +21,32 @@ const Contact = () => {
     details: "",
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<{
+    firstName?: string;
+    lastName?: string;
+    email?: string;
+    phone?: string;
+    projectType?: string;
+    details?: string;
+  }>({});
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleRadio = (value) => {
+  const handleRadio = (value: any) => {
     setFormData({ ...formData, projectType: value });
   };
 
-  // ✅ VALIDATION FUNCTION
   const validateForm = () => {
-    let newErrors = {};
+    let newErrors: {
+      firstName?: string;
+      lastName?: string;
+      email?: string;
+      phone?: string;
+      projectType?: string;
+      details?: string;
+    } = {};
 
     if (!formData.firstName.trim()) {
       newErrors.firstName = "First name is required";
@@ -70,7 +83,7 @@ const Contact = () => {
   };
 
   // ⭐ WEB3FORMS SUBMIT
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     if (!validateForm()) {
@@ -214,7 +227,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Project Type */}
               <div className="bg-white p-4 rounded-lg">
                 <p className="mb-2 font-medium">This project is:</p>
 
